@@ -149,7 +149,7 @@ namespace CHARS.POS
             //mCurretnConnection = new CurrentConnection(Application.StartupPath);
             ApplicationMember.mApplicationPatch = Application.StartupPath;
             bindGlobalOrganization();
-            if (mLicenseBLL.checkLicense())kan
+            if (mLicenseBLL.checkLicense())
             {
                 loadRegister();
                 #region "old"
