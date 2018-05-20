@@ -137,6 +137,7 @@ namespace CHARS.POS
             ribbon.Tabs.Clear();
             ribbon.OrbDropDown.MenuItems.Clear();
             ribbon.QuickAcessToolbar.Items.Clear();
+            //test
 
             //LicenseBLL mLicenseBLL = new LicenseBLL(Application.StartupPath);
             //ConnectionBLL mConnectionBLL = new ConnectionBLL(Application.StartupPath);
