@@ -55,7 +55,7 @@ namespace CHARS.POS
             //tlpMHR.GetControlFromPosition(0, 1).location = new System.Drawing.Point(12, 12);
             // myPanel.Size = new Size(this.Width, this.Height);
         }
-
+//testing tts
         public void changeTab(Panel myPanel, string myFormName)
         {
             //    //CREATE TAB PAGE
