@@ -90,7 +90,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="RefDll\CS_AEPM_POS.bak" />
+    <None Include="RefDll\CS_POS_CLEAN.BAK" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
