@@ -14,7 +14,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -35,10 +35,14 @@
   <ItemGroup>
     <Reference Include="CHARS.HR.BOL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>RefDll\CHARS.HR.BOL.dll</HintPath>
+      <HintPath>..\..\..\CHARS.HR\CHARS.HR.COMMON\bin\Debug\CHARS.HR.BOL.dll</HintPath>
     </Reference>
-    <Reference Include="CHARS.HR.COMMON">
+    <Reference Include="CHARS.HR.COMMON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\CHARS.HR\CHARS.HR.COMMON\bin\Debug\CHARS.HR.COMMON.dll</HintPath>
+    </Reference>
+    <Reference Include="CHARS.POS.BOL">
+      <HintPath>..\CHARS.POS.BOL\bin\Debug\CHARS.POS.BOL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -90,12 +94,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CHARS.POS.BOL\CHARS.POS.BOL.csproj">
-      <Project>{0e42c8ba-512d-4a64-86cc-157b43728b20}</Project>
-      <Name>CHARS.POS.BOL</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="RefDll\CHARS.HR.BOL.dll" />

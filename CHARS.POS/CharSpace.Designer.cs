@@ -948,7 +948,7 @@
             this.ribbon.OrbDropDown.Name = "";
             this.ribbon.OrbDropDown.Size = new System.Drawing.Size(527, 210);
             this.ribbon.OrbDropDown.TabIndex = 0;
-            this.ribbon.OrbImage = ((System.Drawing.Image)(resources.GetObject("ribbon.OrbImage")));
+            this.ribbon.OrbImage = null;
             // 
             // 
             // 
@@ -1082,7 +1082,7 @@
             this.Controls.Add(this.tlpHR);
             this.Controls.Add(this.ribbon);
             this.Name = "CharSpace";
-            this.Text = "Form1";
+            this.Text = "CS POS";
             this.Load += new System.EventHandler(this.CharSpace_Load);
             this.tlpHR.ResumeLayout(false);
             this.tlpHR.PerformLayout();
