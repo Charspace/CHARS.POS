@@ -8,5 +8,6 @@ namespace CHARS.POS.BOL
 {
     public class Class1
     {
+        //zpt
     }
 }
