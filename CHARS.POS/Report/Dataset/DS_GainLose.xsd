@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Submit" targetNamespace="http://tempuri.org/DS_Submit.xsd" xmlns:mstns="http://tempuri.org/DS_Submit.xsd" xmlns="http://tempuri.org/DS_Submit.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Submit" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DS_Submit" msprop:Generator_DataSetName="DS_Submit">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GainLose" msprop:Generator_UserTableName="GainLose" msprop:Generator_RowDeletedName="GainLoseRowDeleted" msprop:Generator_RowChangedName="GainLoseRowChanged" msprop:Generator_RowClassName="GainLoseRow" msprop:Generator_RowChangingName="GainLoseRowChanging" msprop:Generator_RowEvArgName="GainLoseRowChangeEvent" msprop:Generator_RowEvHandlerName="GainLoseRowChangeEventHandler" msprop:Generator_TableClassName="GainLoseDataTable" msprop:Generator_TableVarName="tableGainLose" msprop:Generator_RowDeletingName="GainLoseRowDeleting" msprop:Generator_TablePropName="GainLose">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Lucky_x0020_Type_x0020_Ask" msprop:Generator_UserColumnName="Lucky Type Ask" msprop:Generator_ColumnVarNameInTable="columnLucky_Type_Ask" msprop:Generator_ColumnPropNameInRow="Lucky_Type_Ask" msprop:Generator_ColumnPropNameInTable="Lucky_Type_AskColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Lucky_x0020_Type_x0020_Code" msprop:Generator_UserColumnName="Lucky Type Code" msprop:Generator_ColumnVarNameInTable="columnLucky_Type_Code" msprop:Generator_ColumnPropNameInRow="Lucky_Type_Code" msprop:Generator_ColumnPropNameInTable="Lucky_Type_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Period_x0020_Ask" msprop:Generator_UserColumnName="Period Ask" msprop:Generator_ColumnVarNameInTable="columnPeriod_Ask" msprop:Generator_ColumnPropNameInRow="Period_Ask" msprop:Generator_ColumnPropNameInTable="Period_AskColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Period_x0020_Code" msprop:Generator_UserColumnName="Period Code" msprop:Generator_ColumnVarNameInTable="columnPeriod_Code" msprop:Generator_ColumnPropNameInRow="Period_Code" msprop:Generator_ColumnPropNameInTable="Period_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ListAsk" msprop:Generator_UserColumnName="ListAsk" msprop:Generator_ColumnVarNameInTable="columnListAsk" msprop:Generator_ColumnPropNameInRow="ListAsk" msprop:Generator_ColumnPropNameInTable="ListAskColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="List_x0020_Code" msprop:Generator_UserColumnName="List Code" msprop:Generator_ColumnVarNameInTable="columnList_Code" msprop:Generator_ColumnPropNameInRow="List_Code" msprop:Generator_ColumnPropNameInTable="List_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="List_x0020_Desc" msprop:Generator_UserColumnName="List Desc" msprop:Generator_ColumnVarNameInTable="columnList_Desc" msprop:Generator_ColumnPropNameInRow="List_Desc" msprop:Generator_ColumnPropNameInTable="List_DescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Agent_x0020_Ask" msprop:Generator_UserColumnName="Agent Ask" msprop:Generator_ColumnVarNameInTable="columnAgent_Ask" msprop:Generator_ColumnPropNameInRow="Agent_Ask" msprop:Generator_ColumnPropNameInTable="Agent_AskColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Agent_x0020_Code" msprop:Generator_UserColumnName="Agent Code" msprop:Generator_ColumnVarNameInTable="columnAgent_Code" msprop:Generator_ColumnPropNameInRow="Agent_Code" msprop:Generator_ColumnPropNameInTable="Agent_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Player_x0020_Ask" msprop:Generator_UserColumnName="Player Ask" msprop:Generator_ColumnVarNameInTable="columnPlayer_Ask" msprop:Generator_ColumnPropNameInRow="Player_Ask" msprop:Generator_ColumnPropNameInTable="Player_AskColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Player_x0020_Code" msprop:Generator_UserColumnName="Player Code" msprop:Generator_ColumnVarNameInTable="columnPlayer_Code" msprop:Generator_ColumnPropNameInRow="Player_Code" msprop:Generator_ColumnPropNameInTable="Player_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Master_x0020_Ask" msprop:Generator_UserColumnName="Master Ask" msprop:Generator_ColumnVarNameInTable="columnMaster_Ask" msprop:Generator_ColumnPropNameInRow="Master_Ask" msprop:Generator_ColumnPropNameInTable="Master_AskColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Master_x0020_Code" msprop:Generator_UserColumnName="Master Code" msprop:Generator_ColumnPropNameInRow="Master_Code" msprop:Generator_ColumnVarNameInTable="columnMaster_Code" msprop:Generator_ColumnPropNameInTable="Master_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Submit_x0020_Code" msprop:Generator_UserColumnName="Submit Code" msprop:Generator_ColumnPropNameInRow="Submit_Code" msprop:Generator_ColumnVarNameInTable="columnSubmit_Code" msprop:Generator_ColumnPropNameInTable="Submit_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Submit_x0020_Date" msprop:Generator_UserColumnName="Submit Date" msprop:Generator_ColumnPropNameInRow="Submit_Date" msprop:Generator_ColumnVarNameInTable="columnSubmit_Date" msprop:Generator_ColumnPropNameInTable="Submit_DateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Lose" msprop:Generator_UserColumnName="Lose" msprop:Generator_ColumnPropNameInRow="Lose" msprop:Generator_ColumnVarNameInTable="columnLose" msprop:Generator_ColumnPropNameInTable="LoseColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Gain" msprop:Generator_UserColumnName="Gain" msprop:Generator_ColumnPropNameInRow="Gain" msprop:Generator_ColumnVarNameInTable="columnGain" msprop:Generator_ColumnPropNameInTable="GainColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Type" msprop:Generator_UserColumnName="Type" msprop:Generator_ColumnPropNameInRow="Type" msprop:Generator_ColumnVarNameInTable="columnType" msprop:Generator_ColumnPropNameInTable="TypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Gain_x0020_Type" msprop:Generator_UserColumnName="Gain Type" msprop:Generator_ColumnPropNameInRow="Gain_Type" msprop:Generator_ColumnVarNameInTable="columnGain_Type" msprop:Generator_ColumnPropNameInTable="Gain_TypeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

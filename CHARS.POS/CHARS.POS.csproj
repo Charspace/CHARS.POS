@@ -14,7 +14,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -41,9 +41,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\CHARS.HR\CHARS.HR.COMMON\bin\Debug\CHARS.HR.COMMON.dll</HintPath>
     </Reference>
-    <Reference Include="CHARS.POS.BOL">
-      <HintPath>..\CHARS.POS.BOL\bin\Debug\CHARS.POS.BOL.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.Ribbon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -67,10 +64,49 @@
     <Compile Include="CharSpace.Designer.cs">
       <DependentUpon>CharSpace.cs</DependentUpon>
     </Compile>
+    <Compile Include="General\LuckyMasterConst.cs" />
+    <Compile Include="General\LuckyMasterEnum.cs" />
+    <Compile Include="General\Report.cs" />
+    <Compile Include="List\LstBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\LstBrand.Designer.cs">
+      <DependentUpon>LstBrand.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Dataset\ds.Designer.cs" />
+    <Compile Include="Report\Dataset\ds1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Dataset\DS_CommonPreview.cs" />
+    <Compile Include="Report\Dataset\DS_CommonPreview.designer.cs" />
+    <Compile Include="Report\Dataset\DS_CommonPreview1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_CommonPreview.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Dataset\DS_GainLose.cs" />
+    <Compile Include="Report\Dataset\DS_GainLose.Designer.cs" />
+    <Compile Include="Report\Dataset\DS_GainLose1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_GainLose.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Dataset\DS_Submit.Designer.cs" />
+    <Compile Include="Setup\SetBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setup\SetBrand.Designer.cs">
+      <DependentUpon>SetBrand.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CharSpace.resx">
       <DependentUpon>CharSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\LstBrand.resx">
+      <DependentUpon>LstBrand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +117,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Setup\SetBrand.resx">
+      <DependentUpon>SetBrand.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -91,6 +130,39 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="RefDll\CS_POS_CLEAN.BAK" />
+    <None Include="Report\Dataset\ds.xsc">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\ds.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ds1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\Dataset\ds.xss">
+      <DependentUpon>ds.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\DS_CommonPreview.xsc">
+      <DependentUpon>DS_CommonPreview.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\DS_CommonPreview.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_CommonPreview1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\Dataset\DS_CommonPreview.xss">
+      <DependentUpon>DS_CommonPreview.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\DS_GainLose.xsc">
+      <DependentUpon>DS_GainLose.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\DS_GainLose.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_GainLose1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Report\Dataset\DS_GainLose.xss">
+      <DependentUpon>DS_GainLose.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -98,7 +170,64 @@
   <ItemGroup>
     <Content Include="RefDll\CHARS.HR.BOL.dll" />
     <Content Include="RefDll\CHARS.HR.COMMON.dll" />
-    <Content Include="RefDll\System.Windows.Forms.Ribbon.dll" />
+    <Content Include="SQL\Sp\CS_SP_ASK.sql" />
+    <Content Include="SQL\Sp\CS_SP_CHECK_PERIOD.sql" />
+    <Content Include="SQL\Sp\CS_SP_CHECK_PERIOD_CODE.sql" />
+    <Content Include="SQL\Sp\CS_SP_DELETE.sql" />
+    <Content Include="SQL\Sp\CS_SP_GETCOLUMN.sql" />
+    <Content Include="SQL\Sp\CS_SP_GetRefColumn.sql" />
+    <Content Include="SQL\Sp\CS_SP_INSERT.sql" />
+    <Content Include="SQL\Sp\CS_SP_INSERT_HISTORY.sql" />
+    <Content Include="SQL\Sp\CS_SP_PROCESS.sql" />
+    <Content Include="SQL\Sp\CS_SP_PROCESS_PERIOD.sql" />
+    <Content Include="SQL\Sp\CS_SP_PROCESS_RESULT.sql" />
+    <Content Include="SQL\Sp\CS_SP_REVERT_PERIOD.sql" />
+    <Content Include="SQL\Sp\CS_SP_RPT_AgentComission.sql" />
+    <Content Include="SQL\Sp\CS_SP_RPT_AgentGainLost.sql" />
+    <Content Include="SQL\Sp\CS_SP_RPT_GainLose.sql" />
+    <Content Include="SQL\Sp\CS_SP_RPT_SUBMIT.sql" />
+    <Content Include="SQL\Sp\CS_SP_SEARCH.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECTBYFILTER.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECTS.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_DRAW.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_GAIN&amp;LOSE.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_GAIN.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_LIST.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_LIST_BYCODE.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_MENU.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_MENUGROUP_USER.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_PERIOD_BY.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_PERSON.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_PROCESS_RESULT.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_RESULT.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_SUBMIT.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_SUBMIT_DETAIL.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_SUBMIT_DETAIL_BY.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_SUBMIT_DETAIL_INFO.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_TS.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_USER.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_USER_MENU.sql" />
+    <Content Include="SQL\Sp\CS_SP_SELECT_VOTE.sql" />
+    <Content Include="SQL\Sp\CS_SP_UPDATE.sql" />
+    <Content Include="SQL\Sp\CS_SP_UPDATE_HISTORY.sql" />
+    <SplashScreen Include="RefDll\System.Windows.Forms.Ribbon.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Process\" />
+    <Folder Include="Report\Cri\" />
+    <Folder Include="Report\Crystal\" />
+    <Folder Include="SQL\DataSet\" />
+    <Folder Include="SQL\Function\" />
+    <Folder Include="SQL\Qury\" />
+    <Folder Include="SQL\Script\" />
+    <Folder Include="SQL\View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CHARS.POS.BOL\CHARS.POS.BOL.csproj">
+      <Project>{0e42c8ba-512d-4a64-86cc-157b43728b20}</Project>
+      <Name>CHARS.POS.BOL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

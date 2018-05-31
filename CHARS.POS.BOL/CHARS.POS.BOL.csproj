@@ -40,8 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup\BrandObj.cs" />
+    <Compile Include="Setup\BrandRegionObj.cs" />
+    <Compile Include="Setup\BrandStatusObj.cs" />
+    <Compile Include="Setup\BranTypeObj.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Junction\" />
+    <Folder Include="Reference\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

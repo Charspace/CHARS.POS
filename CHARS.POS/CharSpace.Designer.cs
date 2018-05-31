@@ -1082,7 +1082,9 @@
             this.Controls.Add(this.tlpHR);
             this.Controls.Add(this.ribbon);
             this.Name = "CharSpace";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CS POS";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CharSpace_Load);
             this.tlpHR.ResumeLayout(false);
             this.tlpHR.PerformLayout();
